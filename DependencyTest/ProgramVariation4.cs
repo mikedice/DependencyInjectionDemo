@@ -24,6 +24,7 @@ namespace DependencyTest
 	{
 		public virtual SearchResult PerformSearch(string query)
 		{
+			Console.WriteLine("Pretend this service calls a remote endpoint over HTTP to fetch some search results for the passed in query");
 			Console.WriteLine("Load certificates");
 			Console.WriteLine("Make HTTP call to external service using cert authentication");
 			Console.WriteLine("External service returns what it returns. Maybe 200, maybe 404, maybe 503, maybe xxxxx. Who knows");
